@@ -10,7 +10,12 @@
 
 现在开源请有兴趣的同学帮助维护、强化功能(自定义分数等)、提高质量(作者不太熟悉PHP和Python，写的很烂)
 
-欢迎star、提交pull request！
+欢迎issue讨论/提交pull request
+
+测试运行环境：
+> Python 2.7
+>
+> PHP 7.1
 
 客户端请根据`go.php`自行搭建
 
