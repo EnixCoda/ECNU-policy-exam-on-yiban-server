@@ -2,7 +2,7 @@
 
 简单介绍一下项目文件功能：
 
-`go.php` 过滤客户端请求，用以执行`go.py`
+`go.php` 过滤客户端请求(POST方式，请求字段为username和password)，调用`go.py`(个人使用可忽略该文件)
 
 `go.py` 向易班提交答卷、统计错题
 
@@ -12,11 +12,15 @@
 
 欢迎issue讨论/提交pull request
 
-测试运行环境：
-> Python 2.7
->
-> PHP 7.1
+如何使用：
 
-客户端请根据`go.php`自行搭建
+1. 安装 [Python 2.7](https://www.python.org/downloads/)
+2. 安装 [requests插件](http://docs.python-requests.org/zh_CN/latest/user/install.html#install)
+3. 通过命令行进入`go.py`所在目录，运行`python go.py [账号] [密码]`命令
+4. 前几次运行分数将会较低，因为缺少题库数据(运行后存放于`answer.json`文件)，属于正常情况
+
+如需开放给他人使用，请根据`go.php`搭建客户端页面
+
+如有问题，欢迎在issue交流
 
 祝你好运！
