@@ -131,7 +131,9 @@ def answer_paper(paper):
 
     # answer time is calc on yiban, to prevent being banned, wait for a while before submitting
     submit_url = 'http://www.yiban.cn/t/student/submitsj'
+    # comment out the line bellow to skip waiting
     time_to_sleep = random.randint(15 * 60, 25 * 60)
+    print('gonna sleep for ' + str(time_to_sleep) + ' seconds')
     time.sleep(time_to_sleep)
     response_score = poster.post(
         submit_url,
